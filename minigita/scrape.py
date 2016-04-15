@@ -72,8 +72,7 @@ def get(chapter):
          if(Count >= 20):
             break
 
-#cat = [('ashtavakra', 20), ('avadhuta', 8), ('kapila', 3), ('sriram', 1), ('sruti', 2), ('uddhava', 24), ('vibhishana', 1)]
-cat = [('sriram', 1), ('sruti', 2), ('uddhava', 24), ('vibhishana', 1)]
+cat = [('ashtavakra', 20), ('avadhuta', 8), ('kapila', 3), ('sriram', 1), ('sruti', 2), ('uddhava', 24), ('vibhishana', 1)]
 for i in cat:
    category, chapter = i[0], i[1]
    os.system('mkdir ' + category)
