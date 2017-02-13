@@ -5,8 +5,8 @@ import collections
 from bs4 import BeautifulSoup
 from django.utils.text import slugify
 
-sourceLink = 'http://www.gurbanifiles.org'
-source = 'Gurbani Files'
+sourceLink = 'http://www.gitasupersite.iitk.ac.in/'
+source = 'Gita Supersite'
 
 works = [{
 	'originalTitle': "भगवद्गीता",
