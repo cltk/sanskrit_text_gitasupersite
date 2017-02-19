@@ -63,7 +63,10 @@ def jaggedListToDict(text):
 	node = collections.OrderedDict(sorted(node.items(), key=lambda k: int(k[0])))
 	for child in node:
 		if isinstance(node[child], list):
-			node[child] = jaggedListToDict(node[child])
+			if len(node[child]) == 1:
+				node[child] = node[child][0]
+			else:
+				node[child] = jaggedListToDict(node[child])
 	return node
 
 def fileToLines(root, fname):
